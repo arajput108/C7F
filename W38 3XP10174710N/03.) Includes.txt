@@ -1,0 +1,18 @@
+Author: LT 'syreal' Jones
+
+Problem:- https://play.picoctf.org/practice/challenge/274?category=1&difficulty=1&originalEvent=70&page=1
+Description:
+Can you get the flag?
+Go to this website(http://saturn.picoctf.net:62934/) and see what you can discover
+
+Hints: 
+Is there more code than what the inspector initially shows?
+
+<---------------------------------------------SOLUTION------------------------------------------------>
+---> Web Inspector
+---> After inspecting, found JS & CSS file.
+---> Carefully inspect both file.
+---> 1st half is in CSS & 2nd half is in JS.
+---> Login using this password as Admin.
+
+FLAG:- picoCTF{1nclu51v17y_1of2_f7w_2of2_df589022}
