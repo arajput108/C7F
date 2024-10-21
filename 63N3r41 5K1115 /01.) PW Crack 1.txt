@@ -1,0 +1,20 @@
+Author: LT 'syreal' Jones
+
+Problem:- https://play.picoctf.org/practice/challenge/245?originalEvent=69&page=1
+Description:
+Can you crack the password to get the flag?
+Download the password checker here and you'll need the encrypted flag in the same directory too.
+
+Hints: 
+To view the file in the webshell, do: $ nano level1.py
+To exit nano, press Ctrl and x and follow the on-screen prompts.
+The str_xor function does not need to be reverse engineered for this challenge.
+
+<---------------------------------------------SOLUTION------------------------------------------------>
+---> Web Inspector
+---> login as Admin.
+---> Got JS file.
+---> There password suggestion as 'strongpassword'
+---> Login using this password as Admin.
+
+FLAG:- 
