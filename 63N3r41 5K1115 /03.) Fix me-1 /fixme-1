@@ -1,0 +1,37 @@
+Author: LT 'syreal' Jones
+
+Problem:- https://play.picoctf.org/practice/challenge/240?originalEvent=69&page=1
+Description:
+Fix the syntax error in this Python script to print the flag.
+
+Hints: 
+* Indentation is very meaningful in Python.
+* To view the file in the webshell, do: $ nano fixme1.py
+* To exit nano, press Ctrl and x and follow the on-screen prompts.
+* The str_xor function does not need to be reverse engineered for this challenge.
+
+<---------------------------------------------SOLUTION------------------------------------------------>
+---> Open Python file.
+---> Check the code.
+---> There you'll find the Indentation error, rectify that.
+---> Run the .py file.
+---> you've your flag.
+
+FLAG:- picoCTF{1nd3nt1ty_cr1515_6a476c8f}
+
+
+
+
+
+
+
+
+
+Indentation means adding spaces at the beginning of a line to show which lines of code belong together. 
+In Python, indentation is important because it helps the program know which code belongs inside loops, 
+functions, or conditionals.
+# Correct indentation
+if True:
+    print("This is inside the if block")  # This line is indented
+print("This is outside the if block")  # No indentation here
+
