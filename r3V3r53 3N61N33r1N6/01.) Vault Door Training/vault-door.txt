@@ -1,1 +1,21 @@
+Author: Mark E. Haase
 
+Problem:- https://play.picoctf.org/practice/challenge/7?category=3&difficulty=1&page=1&search=
+Description:
+Your mission is to enter Dr. Evil's laboratory and retrieve the blueprints for his Doomsday Project. 
+The laboratory is protected by a series of locked vault doors. Each door is controlled by a computer 
+and requires a password to open. Unfortunately, our undercover agents have not been able to obtain the 
+secret passwords for the vault doors, but one of our junior agents obtained the source code for each 
+vault's computer! You will need to read the source code for each level to figure out what the password 
+is for that vault door. As a warmup, we have created a replica vault in our training facility. 
+The source code for the training vault is here: "ATTACH THE JAVA FILE HERE"
+
+Hint: 
+The password is revealed in the program's source code.
+
+<---------------------------------------------SOLUTION------------------------------------------------>
+---> Open Java file.
+---> Go through the code base with all the common sense.
+---> Got the flag in code.
+
+FLAG:- picoCTF{w4rm1ng_Up_w1tH_jAv4_be8d9806f18}
