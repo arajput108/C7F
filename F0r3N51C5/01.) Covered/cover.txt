@@ -1,6 +1,7 @@
 Author: p4nth3r
 
 Q1.) I see there is the flag, but it is somehow misspelled.
+     Link files are in earlier folder.
 https://drive.google.com/file/d/1C9_gp08JV6nGyRNPWAcruWH3OFOKPk4c/view?usp=sharing
 
 
