@@ -1,1 +1,61 @@
+Author: Theoneste Byagutangaza
 
+Problem:- https://play.picoctf.org/practice/challenge/371?category=5&difficulty=1&page=1
+Description:
+Can you make sense of this file?
+Download the file here (https://github.com/arajput108/C7F/blob/main/63N3r41%205K1115%20/04.)%20repetitions/enc_flag)
+
+Hints: 
+Multiple decoding is always good.
+
+<---------------------------------------------SOLUTION------------------------------------------------>
+--->1. Identify the Encoding Layer
+In your encoded string, it's likely that multiple layers of Base64 were applied. Each time you decode, you uncover another Base64-encoded string (until you reach the final readable message).
+
+2. Setup for Decoding in Kali Linux
+In Kali, you can use the base64 command to decode, but you'll need to do it in multiple rounds if it's encoded several times. Here’s the breakdown:
+
+3. Command for Base64 Decoding
+Each decoding round can be done using:
+
+bash
+Copy code
+echo "ENCODED_STRING" | base64 -d
+However, for multiple layers, follow these steps:
+
+Copy the Initial Encoded Text
+Copy the long Base64 string and save it to a text file, say encoded.txt.
+
+First Decoding Round
+
+bash
+Copy code
+cat encoded.txt | base64 -d > decoded1.txt
+This reads the encoded file (encoded.txt), decodes it, and writes the output to decoded1.txt.
+
+Repeat Decoding Rounds Each time you decode, check if the output is readable or another Base64 string. You might need to perform multiple rounds like this:
+
+bash
+Copy code
+cat decoded1.txt | base64 -d > decoded2.txt
+bash
+Copy code
+cat decoded2.txt | base64 -d > decoded3.txt
+And so on. Each output (decoded1.txt, decoded2.txt, etc.) may contain another layer of Base64, so continue until the decoded output makes sense.
+
+4. Automation with a Loop (Optional)
+To avoid manually typing commands repeatedly, you could automate it with a loop:
+
+bash
+Copy code
+cat encoded.txt > temp.txt
+for i in {1..5}; do
+  cat temp.txt | base64 -d > decoded_output.txt 2>/dev/null
+  mv decoded_output.txt temp.txt
+done
+cat temp.txt
+This will attempt up to 5 layers. Check temp.txt to see the final decoded result.
+
+
+
+FLAG:- picoCTF{base64_n3st3d_dic0d!n8_d0wnl04d3d_9b59b35c}
