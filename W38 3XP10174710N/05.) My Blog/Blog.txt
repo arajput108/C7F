@@ -1,0 +1,18 @@
+Author:  Noxtal
+
+Problem:- https://ctflearn.com/challenge/979
+Description: Hi, I'm Noxtal! I have hidden a flag somewhere in my Cyberworld (AKA blog)... you may find a good 
+             application for your memory. ;)
+             Note: This is my real website (thus no deadly bug to exploit here). You might want to read some of 
+             my content (writeups, tutorials, and cheatsheets). I would be glad to receive any kind of feedback.
+             Click(http://ww7.noxtal.com/?usid=24&utid=8916341543) to access it, have fun checking my blog out! 
+
+Hint: replace the flag{} part with CTFlearn{}.
+
+<---------------------------------------------SOLUTION------------------------------------------------>
+---> Web Inspector
+---> Check in Storage/Application section.
+---> After deep search.
+---> Got the Flag.
+
+FLAG:-  CTFlearn{n7f_l0c4l_570r463_15n7_53cur3_570r463}
