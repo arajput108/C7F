@@ -1,0 +1,15 @@
+Author: Gobustme ?
+
+Problem:- https://ctflearn.com/challenge/1116
+Description:
+Some ghosts made this site ?, it's a little spooky but theres a bunch of stuff hidden around.
+Here:- gobustme.ctflearn.com
+
+Hints: None
+
+<---------------------------------------------SOLUTION------------------------------------------------>
+---> Web Inspector
+---> Find
+---> Get the Flag.
+
+FLAG:- CTFlearn{gh0sbu5t3rs_4ever}
