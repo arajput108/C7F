@@ -1,1 +1,20 @@
+Author: Jeffery John
+
+Loc:- https://play.picoctf.org/practice/challenge/240?originalEvent=69&page=1
+
+Description:
+What was I last working on? I remember writing a note to help me remember...
+You can download the challenge files here: ( https://github.com/arajput108/C7F/tree/main/63N3r41%205K1115%20/05.)%20Time%20Machine )
+
+
+Hints: 
+* The cat command will let you read a file, but that won't help you here!
+* Read the chapter on Git from the picoPrimer here( https://primer.picoctf.org/#_git_version_control )
+* When committing a file with git, a message can (and should) be included.
+
+<---------------------------------------------SOLUTION------------------------------------------------>
+---> Check all the files
+---> you've your flag.
+
+FLAG:- picoCTF{t1m3m@ch1n3_d3161c0f}
 
