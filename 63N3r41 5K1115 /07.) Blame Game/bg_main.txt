@@ -1,0 +1,19 @@
+Author: Jeffery John
+
+Problem:- https://play.picoctf.org/practice/challenge/405?category=5&difficulty=1&page=1
+Description:
+Someone's commits seems to be preventing the program from working. Who is it?
+You can download the challenge files here: (https://github.com/arajput108/C7F/blob/main/63N3r41%205K1115%20/07.)%20Blame%20Game/challenge.zip)
+
+Hints: 
+In collaborative projects, many users can make many changes. How can you see the changes within one file?
+Read the chapter on Git from the picoPrimer here:( https://primer.picoctf.org/#_git_version_control )
+You can use python3 <file>.py to try running the code, though you won't need to for this challenge
+
+<---------------------------------------------SOLUTION------------------------------------------------>
+---> Unzip the zipped file.
+---> Search deeper and intellectually.
+---> Got master.txt
+---> Got the flag.
+
+FLAG:- picoCTF{@sk_th3_1nt3rn_81e716ff}
